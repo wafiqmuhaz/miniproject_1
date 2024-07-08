@@ -4,64 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../bloc/user_bloc/user_bloc.dart';
 import '../../bloc/user_bloc/user_state.dart';
 
-// class UserPage extends StatelessWidget {
-//   const UserPage({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text('Profile'),
-//       ),
-//       body: BlocBuilder<UserBloc, UserState>(
-//         builder: (context, state) {
-//           if (state is UserLoading) {
-//             return const Center(child: CircularProgressIndicator());
-//           }
-//           if (state is UserError) {
-//             return Center(child: Text('Error: ${state.message}'));
-//           }
-//           if (state is UserLoaded) {
-//             final user = state.user;
-//             return ListView(
-//               padding: const EdgeInsets.all(16),
-//               children: [
-//                 CircleAvatar(
-//                   radius: 100,
-//                   backgroundImage: user.id != null
-//                       ? NetworkImage(
-//                           "https://picsum.photos/200/300?random=${user.id}")
-//                       : Image.asset("https://via.placeholder.com/150/56a8c2")
-//                           .image,
-//                 ),
-//                 ListTile(
-//                   title: const Text('Name'),
-//                   subtitle:
-//                       Text('${user.name.firstname} ${user.name.lastname}'),
-//                 ),
-//                 ListTile(
-//                   title: const Text('Email'),
-//                   subtitle: Text(user.email),
-//                 ),
-//                 ListTile(
-//                   title: const Text('Phone'),
-//                   subtitle: Text(user.phone),
-//                 ),
-//                 ListTile(
-//                   title: const Text('Address'),
-//                   subtitle: Text(
-//                       '${user.address.street}, ${user.address.city}, ${user.address.zipcode}'),
-//                 ),
-//               ],
-//             );
-//           }
-//           return Container();
-//         },
-//       ),
-//     );
-//   }
-// }
-
 class UserPage extends StatelessWidget {
   const UserPage({super.key});
 
@@ -119,7 +61,7 @@ class UserPage extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                          colors: [Colors.orange, Colors.yellow],
+                          colors: [Color.fromARGB(255, 255, 175, 55), Colors.yellow],
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                         ),
@@ -136,19 +78,54 @@ class UserPage extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 8),
+                          const Divider(
+                            color: Colors.black,
+                            thickness: 3,
+                          ),
                           Text(
-                            'Designer @ New York',
+                            'Designer @ ${user.address.street}, ${user.address.city}',
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          Text(
+                            user.address.zipcode,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          const Divider(
+                            color: Colors.black,
+                          ),
+                          Text(
+                            user.email,
+                            style: const TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          const Divider(
+                            color: Colors.black,
+                          ),
+                          Text(
+                            user.phone,
                             style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
                           const SizedBox(height: 16),
-                          Row(
+                          const Divider(
+                            color: Colors.black,
+                            thickness: 3,
+                          ),
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Column(
-                                children: const [
+                                children: [
                                   Text(
                                     '542',
                                     style: TextStyle(
@@ -160,7 +137,7 @@ class UserPage extends StatelessWidget {
                                 ],
                               ),
                               Column(
-                                children: const [
+                                children: [
                                   Text(
                                     '98K',
                                     style: TextStyle(
@@ -172,7 +149,7 @@ class UserPage extends StatelessWidget {
                                 ],
                               ),
                               Column(
-                                children: const [
+                                children: [
                                   Text(
                                     '100K',
                                     style: TextStyle(
@@ -186,60 +163,55 @@ class UserPage extends StatelessWidget {
                             ],
                           ),
                           const SizedBox(height: 16),
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: const Text('Hire Me'),
+                          Center(
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              child: const Text('Hire Me'),
+                            ),
                           ),
                           const SizedBox(height: 16),
-                          Row(
-                            children: const [
-                              Icon(Icons.link),
-                              SizedBox(width: 8),
-                              Icon(Icons.link),
-                            ],
-                          ),
                           const SizedBox(height: 16),
-                          Text(
+                          const Text(
                             'ABOUT',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           const SizedBox(height: 8),
-                          Text(
+                          const Text(
                             'Fashion designer and stylist, experience of about 3 years in fashion industry. Thus I would like to help out people who are truly willing.',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 16,
                             ),
                           ),
                           const SizedBox(height: 16),
-                          Text(
+                          const Text(
                             'PROJECTS',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           const SizedBox(height: 8),
-                          Text(
+                          const Text(
                             'Project design is a major first step towards a successful project. A project design is a strategic organization of ideas, materials, and processes for the purpose of achieving a goal.',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 16,
                             ),
                           ),
                           const SizedBox(height: 16),
-                          Text(
+                          const Text(
                             'TOOLS',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
                           const SizedBox(height: 8),
-                          Text(
+                          const Text(
                             'Adobe Photoshop        Adobe Illustrator',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 16,
                             ),
                           ),
