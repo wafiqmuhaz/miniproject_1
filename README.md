@@ -1,16 +1,46 @@
-# miniproject_1
+# Mini Project 01 - 
 
-A new Flutter project.
+## Mobile Flutter Superbootcamp Hibah Disnaker Jawa Barat 2024
 
-## Getting Started
+## About this project
 
-This project is a starting point for a Flutter application.
+Mini Project 01 - is a platform cloning exercises like tokopedia, lazada or shopee
 
-A few resources to get you started if this is your first Flutter project:
+## System Architecture
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![SystemArchitecture](https://bloclibrary.dev/_astro/bloc.DJLDGT9c_1KXLNj.svg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Bloc State Management (Business Logic Components) It aims to separate the application's business logic from the User Interface, making the application code more unambiguous, scalable, and testable.
+
+## Business
+-
+
+## Logic
+-
+
+## Components
+-
+
+## Repositories
+
+|    Branch Name     |                                      Branch Link                                         |
+| :----------------: | :--------------------------------------------------------------------------------------: |
+| Mobile Development | [MD Branch](https://github.com/wafiqmuhaz/miniproject1)                                  |
+|  API profile       | [API lINKS](https://fakestoreapi.com/users/1)                                            |
+|  API product       | [API lINKS](https://fakestoreapi.com/products)                                           |
+|  API cart          | [API lINKS](https://fakestoreapi.com/carts)                                              |
+
+## API Documentations
+
+API Documentation Endpoint profile: [Endpoint](https://fakestoreapi.com/users/1)
+API Documentation Endpoint product: [Endpoint](https://fakestoreapi.com/products)
+API Documentation Endpoint cart   : [Endpoint](https://fakestoreapi.com/carts)
+
+## UI/UX Design
+
+- Link Figma Design : [Figma]()
+
+## Deployment Link APK Waras
+
+Download Link APK MiniProject1:<br>
+[MiniProject1 (Google Drive)]()
