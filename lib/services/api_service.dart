@@ -27,11 +27,9 @@ class ApiService {
     }
   }
 
-    
   Future<List<ProductModel>> getProducts() async {
     final response = await http.get(Uri.parse('$baseUrl/products'),
         headers: {"Content-Type": "application/json"});
-
     if (response.statusCode == 200) {
       List jsonResponse = json.decode(response.body);
       return jsonResponse.map((product) => ProductModel.fromJson(product)).toList();
