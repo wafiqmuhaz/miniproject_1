@@ -7,16 +7,19 @@ import '../model/user_model.dart';
 // class ApiService menangani permintaan HTTP untuk mengambil data pengguna.
 
 class ApiService {
-  // baseUrl: URL default/dasar API. 
+  // baseUrl: URL default/dasar API.
   final String baseUrl = 'https://fakestoreapi.com';
 
   //FETCH PROFILE USER
   //fetchUser: Mengambil data pengguna dari API.
   Future<User> fetchUser() async {
     final response = await http.get(Uri.parse('$baseUrl/users/1'));
+    print("responsefetchUser: ${response.body}");
     if (response.statusCode == 200) {
       // Jika berhasil, akan mengembalikan objek Pengguna yang dibuat dari respons JSON.
-      return User.fromJson(json.decode(response.body));
+      var decodeUser = User.fromJson(json.decode(response.body));
+      print("responsedecodeUser: ${decodeUser}");
+      return decodeUser;
     } else {
       // Jika gagal, akan muncul 'Gagal mengambil User'.
       throw Exception('Gagal mengambil User');

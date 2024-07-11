@@ -27,6 +27,7 @@ class UserPage extends StatelessWidget {
           // UserLoaded: Menampilkan informasi profil pengguna jika berhasil diambil.
           if (state is UserLoaded) {
             final user = state.user;
+            print("userLoaded: ${user}");
             return Stack(
               children: [
                 Positioned.fill(
