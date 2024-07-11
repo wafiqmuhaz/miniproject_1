@@ -17,6 +17,8 @@ class ProductModel {
     required this.rating,
   });
 
+   
+
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
       id: json['id'],
@@ -26,6 +28,32 @@ class ProductModel {
       category: json['category'],
       image: json['image'],
       rating: Rating.fromJson(json['rating']),
+    );
+  }
+   Map<String, String> toMap() {
+    return {
+      'id': id.toString(),
+      'title': title,
+      'price': price.toString(),
+      'description': description,
+      'category': category,
+      'image': image,
+      'rate': rating.rate.toString(),
+      'count': rating.count.toString(),
+    };
+  }
+  static ProductModel fromMap(Map<String, String> map) {
+    return ProductModel(
+      id: int.parse(map['id'] ?? '0'),
+      title: map['title']!,
+      price: double.tryParse(map['price'] ?? '0') ?? 0,
+      description: map['description']!,
+      category: map['category']!,
+      image: map['image']!,
+      rating: Rating(
+        rate: double.tryParse(map['rate'] ?? '0') ?? 0,
+        count: int.tryParse(map['count'] ?? '0') ?? 0,
+      ),
     );
   }
 }

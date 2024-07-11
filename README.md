@@ -40,6 +40,14 @@ API Documentation Endpoint cart   : [Endpoint](https://fakestoreapi.com/carts)
 
 - Link Figma Design : [Figma]()
 
+## screenshoot
+
+| Home | detail produk | cart | profile | 
+| --------------- | --------------- | --------------- | --------------- | 
+| Row 1, Cell 1   | Row 1, Cell 2   | Row 1, Cell 3   | Row 1, Cell 3   |
+| --------------- | --------------- | --------------- | --------------- | 
+
+
 ## Deployment Link APK Waras
 
 Download Link APK MiniProject1:<br>

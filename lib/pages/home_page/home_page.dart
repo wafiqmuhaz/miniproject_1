@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:miniproject_1/pages/cart_page/cart_screen.dart';
 import 'package:miniproject_1/pages/product_page/product_page.dart';
+import 'package:miniproject_1/routes/routes_name.dart';
 
 import '../user_page/user_page.dart';
 
@@ -14,23 +16,19 @@ class HomePage extends StatelessWidget {
         title: const Text('My E-commerce App'),
         actions: [
           IconButton(
-            icon: const Icon(Icons.person),
+            icon: const Icon(
+              Icons.shopping_basket,
+              size: 40,
+            ),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const UserPage()),
-              );
+               context.push(
+                          RouteNames.cartScreen);
             },
           ),
           IconButton(
-            icon: const Icon(
-              Icons.shopping_basket,
-            ),
+            icon: const Icon(Icons.person,size: 40,),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => CartPage()),
-              );
+              context.push(RouteNames.userPage);
             },
           ),
         ],

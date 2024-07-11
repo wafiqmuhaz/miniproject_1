@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:miniproject_1/bloc/product_bloc/product_bloc.dart';
 import 'package:miniproject_1/bloc/product_bloc/product_state.dart';
-import 'package:miniproject_1/pages/product_page/product_detail_page.dart';
+import 'package:miniproject_1/routes/routes_name.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -34,13 +35,10 @@ class ProductPage extends StatelessWidget {
                     final product = products[index];
                     return GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) =>
-                                ProductDetailPage(product: product),
-                          ),
-                        );
+                        context.push(Uri(
+                                path: RouteNames.detailProduct,
+                                queryParameters: product.toMap())
+                            .toString());
                       },
                       child: Card(
                         child: Column(
