@@ -61,7 +61,10 @@ class UserPage extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         gradient: const LinearGradient(
-                          colors: [Color.fromARGB(255, 255, 175, 55), Colors.yellow],
+                          colors: [
+                            Color.fromARGB(255, 86, 235, 255),
+                            Colors.yellow
+                          ],
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                         ),
@@ -163,12 +166,6 @@ class UserPage extends StatelessWidget {
                             ],
                           ),
                           const SizedBox(height: 16),
-                          Center(
-                            child: ElevatedButton(
-                              onPressed: () {},
-                              child: const Text('Hire Me'),
-                            ),
-                          ),
                           const SizedBox(height: 16),
                           const SizedBox(height: 16),
                           const Text(
@@ -186,35 +183,6 @@ class UserPage extends StatelessWidget {
                             ),
                           ),
                           const SizedBox(height: 16),
-                          const Text(
-                            'PROJECTS',
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          const Text(
-                            'Project design is a major first step towards a successful project. A project design is a strategic organization of ideas, materials, and processes for the purpose of achieving a goal.',
-                            style: TextStyle(
-                              fontSize: 16,
-                            ),
-                          ),
-                          const SizedBox(height: 16),
-                          const Text(
-                            'TOOLS',
-                            style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          const SizedBox(height: 8),
-                          const Text(
-                            'Adobe Photoshop        Adobe Illustrator',
-                            style: TextStyle(
-                              fontSize: 16,
-                            ),
-                          ),
                         ],
                       ),
                     ),
