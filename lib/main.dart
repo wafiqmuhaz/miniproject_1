@@ -18,8 +18,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //MultiBlocProvider: Menyediakan beberapa BLoC ke tree/context/setiap widget yang berhubungan.
     return MultiBlocProvider(
       providers: [
+        //UserBloc: inisialisasi dengan ApiService dan LoadUserEvent.
         BlocProvider<UserBloc>(
           create: (context) => UserBloc(ApiService())..add(LoadUserEvent()),
         ),

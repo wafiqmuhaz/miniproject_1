@@ -13,14 +13,18 @@ class UserPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Profile'),
       ),
+      //BlocBuilder: Menerima UserBloc dan menunggu UI berdasarkan UserState yang diambil.
       body: BlocBuilder<UserBloc, UserState>(
         builder: (context, state) {
+          //UserLoading: Menampilkan Loaing ketika sedang diambil.
           if (state is UserLoading) {
             return const Center(child: CircularProgressIndicator());
           }
+          //UserError: Menampilkan pesan salah.
           if (state is UserError) {
             return Center(child: Text('Error: ${state.message}'));
           }
+          // UserLoaded: Menampilkan informasi profil pengguna jika berhasil diambil.
           if (state is UserLoaded) {
             final user = state.user;
             return Stack(

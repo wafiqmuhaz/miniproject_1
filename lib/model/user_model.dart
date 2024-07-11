@@ -1,3 +1,5 @@
+// class User dan class terkait (Alamat, Geolokasi, Nama)
+// yang mewakili struktur data pengguna/user.
 class User {
   final Address address;
   final int id;
@@ -17,6 +19,7 @@ class User {
     required this.phone,
   });
 
+// fromJson: menata ulang properti User yang dihasilkan Pengguna dari JSON.
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       address: Address.fromJson(json['address']),
