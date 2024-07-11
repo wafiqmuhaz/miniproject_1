@@ -7,8 +7,11 @@
 Mini Project 01 - is a platform cloning exercises like tokopedia, lazada or shopee
 
 ## System Architecture
+|    ![SystemArchitecture](https://bloclibrary.dev/_astro/bloc.DJLDGT9c_1KXLNj.svg)     | 
+| :----------------: | 
 
-![SystemArchitecture](https://bloclibrary.dev/_astro/bloc.DJLDGT9c_1KXLNj.svg)
+
+
 
 Bloc State Management (Business Logic Components) It aims to separate the application's business logic from the User Interface, making the application code more unambiguous, scalable, and testable.
 
@@ -44,7 +47,7 @@ API Documentation Endpoint cart   : [Endpoint](https://fakestoreapi.com/carts)
 
 | Home | detail produk | cart | profile | 
 | --------------- | --------------- | --------------- | --------------- | 
-| Row 1, Cell 1   | Row 1, Cell 2   | Row 1, Cell 3   | Row 1, Cell 3   |
+| ![home_app](https://github.com/wafiqmuhaz/miniproject_1/assets/56067805/71741ee6-4ba5-4d65-97cf-54c2d842e16c)   | ![detail produk](https://github.com/wafiqmuhaz/miniproject_1/assets/56067805/5c4497ce-27a3-4135-acef-1f6a608007a7)  | ![cart](https://github.com/wafiqmuhaz/miniproject_1/assets/56067805/6823f5ce-f05c-450f-845d-1bccc3c430a1)   | ![profile](https://github.com/wafiqmuhaz/miniproject_1/assets/56067805/91fa49ca-fd1f-4781-bba1-e82a5616c577)  |
 | --------------- | --------------- | --------------- | --------------- | 
 
 
