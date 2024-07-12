@@ -4,7 +4,19 @@
 
 ## About this project
 
-Mini Project 01 - is a platform cloning exercises like tokopedia, lazada or shopee
+Aplikasi ini merupakan hasil dari program Mobile Flutter Superbootcamp Hibah Disnaker Jawa Barat 2024. Proyek ini bertujuan untuk mengembangkan aplikasi e-commerce(seperti Shopee, Lazada, Tokopedia dll) dengan memanfaatkan beberapa API yang telah disediakan, yaitu API Profil, API Produk, dan API Keranjang.
+
+## Fitur Utama
+
+- Daftar Produk: Menampilkan daftar produk yang tersedia.
+- Detail Produk: Menyediakan informasi lengkap tentang produk.
+- Keranjang: Memungkinkan pengguna untuk menambahkan dan mengelola produk dalam keranjang belanja.
+- Profil Pengguna: Menampilkan informasi profil pengguna.
+
+## Teknologi dan Manajemen State
+
+Aplikasi ini menggunakan manajemen state Bloc dengan struktur folder yang rapi untuk memastikan kode yang bersih dan terorganisir.
+
 
 ## screenshoot
 
