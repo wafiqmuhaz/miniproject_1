@@ -17,6 +17,45 @@ Aplikasi ini merupakan hasil dari program Mobile Flutter Superbootcamp Hibah Dis
 
 Aplikasi ini menggunakan manajemen state Bloc dengan struktur folder yang rapi untuk memastikan kode yang bersih dan terorganisir.
 
+## Struktur Project
+
+miniproject_1/
+├── android/
+├── ios/
+├── lib/
+│   ├── bloc
+│         ├── cart_bloc
+│                 ├── cart_bloc.dart
+│                 ├── cart_event.dart
+│                 ├── cart_state.dart
+│         ├── product_bloc
+│                 ├── product_bloc.dart
+│                 ├── product_event.dart
+│                 ├── product_state.dart
+│         ├── user_bloc
+│                 ├── user_bloc.dart
+│                 ├── user_event.dart
+│                 ├── user_state.dart
+│   ├── model
+│         ├── cart_model.dart
+│         ├── product_model.dart
+│         ├── user_model.dart
+│   ├── pages
+│         ├── cart_page
+│                 ├── cart_screen.dart
+│                 ├── listview_cart.dart
+│         ├── home_page
+│                 ├── home_page.dart
+│         ├── product_page
+│                 ├── product_detail_page.dart
+│                 ├── product_page.dart
+│         ├── user_page
+│                 ├── user_page.dart
+│   ├── services
+│         ├── api_services.dart
+│   ├── main.dart
+├── pubspec.yaml
+
 
 ## screenshoot
 
