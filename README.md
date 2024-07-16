@@ -19,6 +19,7 @@ Aplikasi ini menggunakan manajemen state Bloc dengan struktur folder yang rapi u
 
 ## Struktur Project
 
+```bash
 miniproject_1/
 ├── android/
 ├── ios/
@@ -55,6 +56,7 @@ miniproject_1/
 │         ├── api_services.dart
 │   ├── main.dart
 ├── pubspec.yaml
+```
 
 
 ## screenshoot
@@ -106,7 +108,7 @@ API Documentation Endpoint cart   : [Endpoint](https://fakestoreapi.com/carts)
 
 
 
-## Deployment Link APK Waras
+## Deployment Link APK
 
 Download Link APK MiniProject1:<br>
 [MiniProject1 (Google Drive)]()
